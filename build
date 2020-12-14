@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+echo "prepare..."
+rm -rf dist
+mkdir -p dist
+
+echo "building ldnotify.ls -> ldnotify.js ..."
+npx lsc -cp src/ldnotify.ls > dist/ldnotify.js
+echo "minify ldnotify.js -> ldnotify.min.js ..."
+npx uglifyjs dist/ldnotify.js > dist/ldnotify.min.js
+
+echo "build src/ldnotify.styl -> dist/ldnotify.css ..."
+./node_modules/.bin/stylus -p src/ldnotify.styl > dist/ldnotify.css
+echo "minifying ldnotify.css ..."
+./node_modules/.bin/uglifycss dist/ldnotify.css > dist/ldnotify.min.css
+
+echo "copy dist to web ..."
+rm -rf web/static/assets/lib/ldnotify/dev/
+mkdir -p web/static/assets/lib/ldnotify/dev/
+cp -R dist/* web/static/assets/lib/ldnotify/dev/

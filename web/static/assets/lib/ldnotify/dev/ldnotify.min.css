@@ -1,0 +1,1 @@
+.ldnotify{position:fixed;pointer-events:none;z-index:100;top:50px;margin:auto;left:0;right:0;text-align:center;display:flex;flex-direction:column;flex-wrap:nowrap;align-items:center}.ldnotify .alert{min-width:200px;text-align:center;box-shadow:0 1px 1px rgba(0,0,0,0.2);display:inline-block;flex:0 0 auto;border:1px solid currentColor}

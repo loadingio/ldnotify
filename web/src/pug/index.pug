@@ -1,0 +1,14 @@
+doctype html
+html
+  include /../../static/assets/lib/bootstrap.ldui/main/index.pug
+  head
+    +css("/assets/lib/bootstrap/main/css/bootstrap.min.css")
+    +css("/assets/lib/@loadingio/loading.css/main/loading.min.css")
+    +css("/assets/lib/@loadingio/transition.css/main/transition.min.css")
+    +css("/assets/lib/ldnotify/dev/ldnotify.min.css")
+  body
+    .ld.ld-bounce-in hi
+    +script("/assets/lib/ldnotify/dev/ldnotify.min.js")
+    script: :lsc
+      ldn = new ldnotify!
+      ldn.send \success, \hello
