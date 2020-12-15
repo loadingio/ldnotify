@@ -2,7 +2,7 @@
   "author": "zbryikt",
   "name": "ldnotify",
   "license": "MIT",
-  "description": "notification in webpage",
+  "description": "simple notification widget",
   "version": "0.0.1",
   "files": [
     "dist/**/*"
