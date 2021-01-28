@@ -12,7 +12,7 @@ simple notification widget.
 
 include `ldnotify.js` and `ldnotify.css`, then send a notification with:
 
-    ldnotify('success', 'message of your notification');
+    ldnotify.send('success', 'message of your notification');
 
 By default there are following type of messages:
 
