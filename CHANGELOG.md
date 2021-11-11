@@ -1,5 +1,10 @@
 # Change Logs
 
+## v0.0.4
+
+ - tweak background opacity
+
+
 ## v0.0.3
 
  - rename dist files to `index.js` and `index.css`
