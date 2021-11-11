@@ -1,5 +1,9 @@
 # Change Logs
 
+## v0.0.3
+
+ - rename dist files to `index.js` and `index.css`
+
 ## v0.0.2
 
  - upgrade modules
