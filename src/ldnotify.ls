@@ -5,7 +5,7 @@ ldnotify = (opt={}) ->
     className: <[ldnotify-item]>
     classIn: <[ldnotify-in]>
     classOut: <[ldnotify-out]>
-    delay: 2000
+    delay: 3000
   @opt <<< opt
   <[className classIn classOut]>map ~>
     if typeof(@opt[it]) == \string => @opt[it] = @opt[it].split(' ').filter(->it.trim!)
@@ -35,4 +35,4 @@ ldnotify.send = (...args) ->
   lc.obj.send.apply lc.obj, args
 
 if module? => module.exports = ldnotify
-if window? => window.ldnotify = ldnotify
+else if window? => window.ldnotify = ldnotify

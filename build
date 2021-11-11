@@ -5,9 +5,9 @@ rm -rf dist
 mkdir -p dist
 
 echo "building ldnotify.ls -> ldnotify.js ..."
-npx lsc -cp src/ldnotify.ls > dist/ldnotify.js
+./node_modules/.bin/lsc -cp --no-header src/ldnotify.ls > dist/ldnotify.js
 echo "minify ldnotify.js -> ldnotify.min.js ..."
-npx uglifyjs dist/ldnotify.js > dist/ldnotify.min.js
+./node_modules/.bin/uglifyjs dist/ldnotify.js -c -m > dist/ldnotify.min.js
 
 echo "build src/ldnotify.styl -> dist/ldnotify.css ..."
 ./node_modules/.bin/stylus -p src/ldnotify.styl > dist/ldnotify.css
