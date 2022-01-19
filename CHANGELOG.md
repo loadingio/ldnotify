@@ -2,8 +2,6 @@
 
 ## v0.0.5
 
- - rename `ldResize` to `ldresize`
- - rename `ldr.js`, `ldr.min.js` to `index.js` and `index.min.js`
  - upgrade modules
  - release with compact directory structure
  - add `style` in `package.json`
