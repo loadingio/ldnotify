@@ -1,12 +1,12 @@
 doctype html
 html
-  include @/@loadingio/bootstrap.ext/dist/index.pug
+  include @/@loadingio/bootstrap.ext/index.pug
   head
-    +css("/assets/lib/bootstrap/main/css/bootstrap.min.css")
+    +css("/assets/lib/bootstrap/main/dist/css/bootstrap.min.css")
     +css("/assets/lib/@loadingio/bootstrap.ext/main/index.min.css")
     +css("/assets/lib/@loadingio/loading.css/main/loading.min.css")
     +css("/assets/lib/@loadingio/transition.css/main/transition.min.css")
     +css("/assets/lib/ldnotify/dev/index.min.css")
   body
     +script("/assets/lib/ldnotify/dev/index.min.js")
-    script: include:lsc index.ls
+    script(type="module"): include:lsc index.ls
