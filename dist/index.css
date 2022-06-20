@@ -1,7 +1,7 @@
 .ldnotify {
   position: fixed;
   pointer-events: none;
-  z-index: 100;
+  z-index: 5000;
   top: 50px;
   margin: auto;
   left: 0;

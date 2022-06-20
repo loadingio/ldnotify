@@ -1,5 +1,10 @@
 # Change Logs
 
+## v0.0.6
+
+ - tweak ldnotify z-index (align with `z-notify` from `@loadingio/bootstrap.ext`)
+
+
 ## v0.0.5
 
  - upgrade modules
